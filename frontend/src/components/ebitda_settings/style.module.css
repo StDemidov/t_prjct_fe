@@ -1,0 +1,30 @@
+.mainBox {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+  border-radius: 15px;
+  align-items: center;
+}
+
+.infoBox {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 100px;
+  justify-content: center;
+  gap: 10px;
+}
+
+.commonRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.commonCell {
+  min-width: 50px;
+  width: 13%;
+}
+
+.actionsBox {
+  width: 10%;
+}

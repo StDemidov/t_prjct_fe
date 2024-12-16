@@ -1,0 +1,94 @@
+.formStyle {
+  max-width: 400px;
+  margin: 50px auto;
+  background: #fff;
+  border-radius: 2px;
+  padding: 20px;
+}
+.formStyle h1 {
+  display: block;
+  text-align: center;
+  padding: 0;
+  margin: 0px 0px 20px 0px;
+  color: #5c5c5c;
+  font-size: x-large;
+}
+.formStyle ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.formStyle li {
+  display: block;
+  padding: 9px;
+  border: 1px solid #dddddd;
+  margin-bottom: 30px;
+  border-radius: 3px;
+}
+.formStyle li:last-child {
+  border: none;
+  margin-bottom: 0px;
+  text-align: center;
+}
+.formStyle li > label {
+  display: block;
+  float: left;
+  margin-top: -19px;
+  background: #ffffff;
+  height: 14px;
+  padding: 2px 5px 2px 5px;
+  color: #b9b9b9;
+  font-size: 14px;
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.formStyle input[type='text'],
+.formStyle input[type='date'],
+.formStyle input[type='datetime'],
+.formStyle input[type='email'],
+.formStyle input[type='number'],
+.formStyle input[type='search'],
+.formStyle input[type='time'],
+.formStyle input[type='url'],
+.formStyle input[type='password'],
+.formStyle textarea,
+.formStyle select {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  width: 100%;
+  display: block;
+  outline: none;
+  border: none;
+  height: 25px;
+  line-height: 25px;
+  font-size: 16px;
+  padding: 0;
+}
+
+.formStyle li > span {
+  background: #f3f3f3;
+  display: block;
+  padding: 3px;
+  margin: 0 -9px -9px -9px;
+  text-align: center;
+  color: #c0c0c0;
+  font-size: 11px;
+}
+.formStyle textarea {
+  resize: none;
+}
+.formStyle input[type='submit'],
+.formStyle input[type='button'] {
+  background: #8254ff;
+  border: none;
+  text-transform: uppercase;
+  padding: 10px 20px 10px 20px;
+  border-radius: 20px;
+  color: #ffffff;
+}
+.formStyle input[type='submit']:hover,
+.formStyle input[type='button']:hover {
+  background: #9b7af4;
+  color: #fff;
+}

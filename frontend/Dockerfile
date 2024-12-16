@@ -1,5 +1,5 @@
 # Используем официальный минимальный образ Node.js для сборки
-FROM node:16-alpine AS build
+FROM node:16-alpine as build
 
 # Устанавливаем рабочую директорию внутри контейнера
 WORKDIR /app

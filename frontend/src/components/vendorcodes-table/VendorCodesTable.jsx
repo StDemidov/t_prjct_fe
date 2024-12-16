@@ -1,5 +1,5 @@
 import LazyLoad from 'react-lazyload';
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { PiEmptyDuotone } from 'react-icons/pi';
 import { v4 as uuidv4 } from 'uuid';
 import { useSelector } from 'react-redux';
@@ -14,14 +14,8 @@ import {
 } from '../../redux/slices/filterSlice';
 
 const VendorCodesTable = ({ data }) => {
-  const navigation = useNavigate();
   const vcNameFilter = useSelector(selectVCNameFilter);
   const datesFilter = useSelector(selectVCDatesFilter);
-
-  const handleClickOnArt = (event) => {
-    const id = event.currentTarget.getAttribute('data-value');
-    navigation(`/vendorcodes/${id}`);
-  };
 
   const highlightMatch = (text, filter) => {
     if (filter.length === 0) return text;
@@ -100,13 +94,16 @@ const VendorCodesTable = ({ data }) => {
                   </div>
                 </div>
               </div>
-              <div
+              <Link
                 className={`${styles.cell} ${styles.vcCell}`}
-                data-value={vc.id}
-                onClick={handleClickOnArt}
+                to={`/vendorcodes/${vc.id}`}
+                target="_blank"
+                style={{ textDecoration: 'none', color: 'inherit' }}
               >
-                {highlightMatch(vc.vendorCode, vcNameFilter)}
-              </div>
+                <div data-value={vc.id}>
+                  {highlightMatch(vc.vendorCode, vcNameFilter)}
+                </div>
+              </Link>
               <div className={styles.cell}>
                 <LazyLoad key={uuidv4()} offset={100}>
                   <div>
